@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">     
+    <link rel="stylesheet" href="css/styles.css">
+    <title>MiPrimerSemestre-TEC</title>
+    <style>
+        .active{
+            background-color:#faf3b5;
+            box-shadow: 1.2px 1.8px 1.8px 0px rgba(0, 0, 0, 0.10);
+            border: 1px solid rgba(204, 204, 204, 0.5) !important;
+        }
+    </style>
+</head>
+<body>
+    <!--Contenedor principal-->
+    <div class="container">
+    <!--Barra de navegación superior-->
+    <div class="nav">
+        <h3>mi Primer Semestre Tec | mi Planeación</h3>
+        <p class="carrera">Ingeniería / Ingeniería en Innovación y Transfromación (IIT)</p>
+    </div>
+    <!--Barra lateral (UF's)-->
+    <div id="sidebar">
+        <div id="sidebarListcontainer">
+            <h2 id="seleccionTitle">Tu selección</h2>
+            <ul id="sidebarList">
+            </ul>
+        </div>
+        <span id="creditosTotales"></span>
+    </div>
+    <!--Main (Horario)-->
+    <div class="main">
+        <div class="horario">
+            <!--Títulos-->
+            <div id="mainUF"><h2>Unidades de Formación Disciplinares</h2></div>
+            <div id = "P1_Titulo" class="tableTitle"><strong>Periodo 1 <br>(Semanas 1 a 5)</strong></div>
+            <div id = "ST1_Titulo" class="tableTitle"><strong></strong></div>
+            <div id = "P2_Titulo" class="tableTitle"><strong>Periodo 2 <br>(Semanas 6 a 11)</strong></div>
+            <div id = "ST2_Titulo" class="tableTitle"><strong></strong></div>
+            <div id = "P3_Titulo" class="tableTitle"><strong>Periodo 3 <br>(Semanas 13 a 17)</strong></div>
+            <div id = "ST3_Titulo" class="tableTitle"><strong></strong></div>
+            <div id = "WA1057P1" class="active tableCell">WA1057: Mi plan de vida en el tec</div>
+            <div id = "WA1057P2" class="active tableCell">WA1057: Mi plan de vida en el tec</div>
+            <div id = "WA1057P3" class="active tableCell">WA1057: Mi plan de vida en el tec</div>
+            <div id = "EG1P1" class="EG tableCell">Materia de Educación General</div>
+            <div id = "M1P1" class="tableCell">M1P1</div>
+            <div id = "M2P1"class="tableCell">M2P1</div>
+            <div id = "EG1P2" class="EG tableCell">Materia de Educación General</div>
+            <div id = "M1P2" class="tableCell">M1P2</div>
+            <div id = "M2P2" class="tableCell">M2P2</div>
+            <div id = "EG1P3" class="EG tableCell">Materia de Educación General</div>
+            <div id = "M1P3" class="tableCell">M1P3</div>
+            <div id = "M2P3" class="tableCell">M2P3</div>
+            <div id = "B1" class="tableCell">B1</div>
+            <div id = "B2" class="tableCell">B2</div>
+            <div id = "B3" class="tableCell">B3</div>
+            <div id = "ST1" class="active tableCell"><div class="stec">Semana Tec 6 </div></div>
+            <div id = "ST2" class="active tableCell"><div class="stec">Semana Tec 12</div></div>
+            <div id = "ST3" class="active tableCell"><div class="stec">Semana 18 - 1</div></div>
+            <div id="otherUF">
+                <h2>Unidades de Formación LIFE</h2>
+                    <p class="form-group">
+                        <input type="text" placeholder="Escribe el nombre de la Unidad de Formación LIFE de tu interés (Ej. Ajedrez)" class="formInput" id="inputLife1" name="input_1"/>
+                    </p>
+                    <p class="form-group">
+                        <input type="text" placeholder="Escribe el nombre de la Unidad de Formación LIFE de tu interés (Ej. Tenis de Mesa)" class="formInput" id="inputLife2"/>
+                    </p>                   
+                    <p class="form-group">
+                        <input type="text" placeholder="Escribe el nombre de la Unidad de Formación LIFE de tu interés (Ej. Entrenamiento Funcional)" class="formInput" id="inputLife3"/>
+                    </p>                
+            </div>
+        </div>
+    </div>
+    <!-- end of Main (Horario)-->
+    <!--Footer-->
+    <div class="footer">
+        <p>¿Estás listo para inscribirte? Inicia sesión en <a href="https://mitec.itesm.mx" class="link">MiTec</a> e ingresa a <em>Me Inscribo</em></p>
+        <p>Tecnológico de Monterrey</p>
+        <em>Inscripciones Agosto-Diciembre 2021</em>
+    </div>
+</div>
+<!--end of Contenedor principal-->
+<div id="mensaje"></div>
+
+</body>
+<script type = "text/javascript" src = "js/main.js"></script>
+</html>
