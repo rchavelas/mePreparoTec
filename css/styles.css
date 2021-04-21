@@ -4,20 +4,27 @@
   margin: 0px;
 }
 
-body{
+body {
   background-color: #212121;
 }
 
 .container{
+  background-color: white;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-areas:
     "nv nv nv nv nv nv nv nv nv nv" 
     "sd sd sd mn mn mn mn mn mn mn"
-    "ft ft ft ft ft ft ft ft ft ft";
-    /*grid-template-areas: "nv" "mn" "sd" "ft";*/
-    background-color: white;
+    "ft ft ft ft ft ft ft ft ft ft"
+}
 
+@media(max-width:1000px) {
+  .container{
+    display: grid;
+      grid-template-columns: unset;
+      grid-template-areas: "nv" "mn" "sd" "ft";
+      background-color: white;
+  }
 }
 
 .nav{
@@ -74,7 +81,7 @@ box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 
 .horario {
   display: grid;
-  grid-template-columns: 3fr 1fr 3fr 1fr 3fr 1fr;
+  grid-template-columns: 4fr 1fr 4fr 1fr 4fr 1fr;
   grid-template-rows: minmax(40px,auto) repeat(minmax(50px,auto),5);
   grid-gap: 0.25rem;
   grid-template-areas:
@@ -85,7 +92,25 @@ box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
     "M1P1 ST1 M1P2 ST2 M1P3 ST3" 
     "M2P1 ST1 M2P2 ST2 M2P3 ST3"
     "B1 ST1 B2 ST2 B3 ST3" 
-    "otherUF otherUF otherUF otherUF otherUF otherUF" ;}
+    "otherUF otherUF otherUF otherUF otherUF otherUF" ;
+  }
+  
+
+  @media(max-width:767px) {
+    .horario {
+      display: grid;
+      grid-gap: 0.25rem;
+        grid-template-columns: unset;
+        grid-template-rows: unset;
+        grid-template-areas:
+        "mainUF mainUF" "P1 ST1t" "WA1057P1 ST1" "EG1P1 ST1" "M1P1 ST1" "M2P1 ST1"  "B1 ST1" 
+        "P2 ST2t" "WA1057P2 ST2" "EG1P2 ST2" "M1P2 ST2" "M2P2 ST2" "B2 ST2" 
+        "P3 ST3t" "WA1057P3 ST3" "EG1P3 ST3" "M1P3 ST3" "M2P3 ST3""B3 ST3" "otherUF otherUF";
+      }
+      
+  }
+
+
 
 .horario div {
       padding: 10px 10px 10px 10px;
@@ -275,8 +300,20 @@ box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
   font-size: 1em !important;
 }
 
+.stecCell{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .link.yellow { color: #e7e3cb; } /* CSS link color (red) */
 .link:hover { color: #0054a6; } /* CSS link hover (green) */
+
+.navLink { 
+  color: #ffffff;
+  text-decoration: none; 
+}
+.navLink:hover { color:#dddddd; }
 
 .block-cell {
  padding-bottom: 40px !important;
@@ -304,5 +341,8 @@ h4 {
   color: #002d5a;
   margin: 5px;
   border-bottom: 0.5px dashed #ccc;
-  
 }
+
+@media(max-width:767px) {
+  .carreraCompleta{display:none;}
+  }
