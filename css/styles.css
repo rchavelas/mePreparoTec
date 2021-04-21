@@ -15,19 +15,20 @@ body{
     "nv nv nv nv nv nv nv nv nv nv" 
     "sd sd sd mn mn mn mn mn mn mn"
     "ft ft ft ft ft ft ft ft ft ft";
+    /*grid-template-areas: "nv" "mn" "sd" "ft";*/
     background-color: white;
 
 }
 
 .nav{
  grid-area: nv;
- height: 60px;
+ height: 50px;
  padding: 10px 30px 30px 20px;
  background-color:#0054a6;
  color:whitesmoke;
 vertical-align: middle;
 font-weight: 500;
-line-height: 40px;
+line-height: 30px;
 overflow: hidden;
 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
@@ -77,28 +78,25 @@ box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
   grid-template-rows: minmax(40px,auto) repeat(minmax(50px,auto),5);
   grid-gap: 0.25rem;
   grid-template-areas:
-  "mainUF mainUF mainUF mainUF mainUF mainUF"
-  "P1 ST1t P2 ST2t P3 ST3t"   
-  "WA1057P1 ST1 WA1057P2 ST2 WA1057P3 ST3"
-  "EG1P1 ST1 EG1P2 ST2 EG1P3 ST3" 
+    "mainUF mainUF mainUF mainUF mainUF mainUF"
+    "P1 ST1t P2 ST2t P3 ST3t"   
+    "WA1057P1 ST1 WA1057P2 ST2 WA1057P3 ST3"
+    "EG1P1 ST1 EG1P2 ST2 EG1P3 ST3" 
     "M1P1 ST1 M1P2 ST2 M1P3 ST3" 
     "M2P1 ST1 M2P2 ST2 M2P3 ST3"
     "B1 ST1 B2 ST2 B3 ST3" 
     "otherUF otherUF otherUF otherUF otherUF otherUF" ;}
 
-    .horario div {
+.horario div {
       padding: 10px 10px 10px 10px;
-      font-size: 14px;
+      font-size: 0.85em;
     }
 
-  #mainUF{
+#mainUF{
       grid-area: mainUF;
-      padding-bottom: 5px;     }
+      padding-bottom: 5px;     
+    }
 
-h2 {
-  border-bottom: 1.2px solid #ccc;
-
-}
 
 #P1_Titulo {
   grid-area: P1;
@@ -218,15 +216,17 @@ h2 {
   grid-area: otherUF;
  }
  
-#sidebarList li{
+.sidebarList li{
   margin: 8px 5px 8px 5px;
   list-style-type: circle;
+  font-size: 0.9em;
 }
 
-#sidebarList {
+.sidebarList {
   padding: 3px;
   margin-left:10px;
 }
+
 
 .tableTitle{
   color: #002d5a;
@@ -245,7 +245,6 @@ h2 {
 
 #seleccionTitle{
   padding-bottom: 5px;
-  border-bottom: 0.8px dashed #ccc;
 }
 
 #creditosTotales{
@@ -273,7 +272,37 @@ h2 {
 .stec{
   text-orientation: mixed;
   writing-mode: vertical-rl;
+  font-size: 1em !important;
 }
 
-.link { color: #e7e3cb; } /* CSS link color (red) */
+.link.yellow { color: #e7e3cb; } /* CSS link color (red) */
 .link:hover { color: #0054a6; } /* CSS link hover (green) */
+
+.block-cell {
+ padding-bottom: 40px !important;
+}
+
+.active{
+  background-color:#faf3b5;
+  box-shadow: 1.2px 1.8px 1.8px 0px rgba(0, 0, 0, 0.10);
+  border: 1px solid rgba(204, 204, 204, 0.5) !important;
+}
+
+.block-cell.active {
+  background-color:#caf7a5;
+}
+
+.EG.active {
+  background-color:#f5b4ca;
+}
+
+.tenWk.active {
+  background-color:#c3ddf5;
+}
+
+h4 {
+  color: #002d5a;
+  margin: 5px;
+  border-bottom: 0.5px dashed #ccc;
+  
+}

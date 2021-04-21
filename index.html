@@ -7,13 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">     
     <link rel="stylesheet" href="css/styles.css">
-    <title>MiPrimerSemestre-TEC</title>
+    <title>miPrimerSemestreTec</title>
     <style>
-        .active{
-            background-color:#faf3b5;
-            box-shadow: 1.2px 1.8px 1.8px 0px rgba(0, 0, 0, 0.10);
-            border: 1px solid rgba(204, 204, 204, 0.5) !important;
-        }
+ 
     </style>
 </head>
 <body>
@@ -21,14 +17,21 @@
     <div class="container">
     <!--Barra de navegación superior-->
     <div class="nav">
-        <h3>mi Primer Semestre Tec | mi Planeación</h3>
+        <h3>mi Primer Semestre Tec</h3>
         <p class="carrera">Ingeniería / Ingeniería en Innovación y Transfromación (IIT)</p>
     </div>
     <!--Barra lateral (UF's)-->
     <div id="sidebar">
         <div id="sidebarListcontainer">
-            <h2 id="seleccionTitle">Tu selección</h2>
-            <ul id="sidebarList">
+            <h3 id="seleccionTitle">mi Planeación</h3>
+            <h4>Obligatorias</h4>
+            <ul id="sidebarListOblig" class="sidebarList">
+            </ul>
+            <h4>Disciplinares</h4>
+            <ul id="sidebarList" class="sidebarList">
+            </ul>
+            <h4>LiFE</h4>
+            <ul id="sidebarListLife" class="sidebarList">
             </ul>
         </div>
         <span id="creditosTotales"></span>
@@ -44,21 +47,21 @@
             <div id = "ST2_Titulo" class="tableTitle"><strong></strong></div>
             <div id = "P3_Titulo" class="tableTitle"><strong>Periodo 3 <br>(Semanas 13 a 17)</strong></div>
             <div id = "ST3_Titulo" class="tableTitle"><strong></strong></div>
-            <div id = "WA1057P1" class="active tableCell">WA1057: Mi plan de vida en el tec</div>
-            <div id = "WA1057P2" class="active tableCell">WA1057: Mi plan de vida en el tec</div>
-            <div id = "WA1057P3" class="active tableCell">WA1057: Mi plan de vida en el tec</div>
+            <div id = "WA1057P1" class="active tableCell"><strong>WA1057</strong>: Mi plan de vida en el tec</div>
+            <div id = "WA1057P2" class="active tableCell"><strong>WA1057</strong>: Mi plan de vida en el tec</div>
+            <div id = "WA1057P3" class="active tableCell"><strong>WA1057</strong>: Mi plan de vida en el tec</div>
             <div id = "EG1P1" class="EG tableCell">Materia de Educación General</div>
-            <div id = "M1P1" class="tableCell">M1P1</div>
-            <div id = "M2P1"class="tableCell">M2P1</div>
+            <div id = "M1P1" class="tableCell"><strong>TC1028</strong>: Pensamiento computacional para ingeniería</div>
+            <div id = "M2P1"class="tableCell"><strong>Q1028</strong>: Fundamentación de la estructura y transfromación de la materia</div>
             <div id = "EG1P2" class="EG tableCell">Materia de Educación General</div>
-            <div id = "M1P2" class="tableCell">M1P2</div>
-            <div id = "M2P2" class="tableCell">M2P2</div>
+            <div id = "M1P2" class="tableCell"><strong>TC1028</strong> Pensamiento computacional para ingeniería</div>
+            <div id = "M2P2" class="tableCell"><strong>MA1028</strong>: Modelación matemática fundamental</div>
             <div id = "EG1P3" class="EG tableCell">Materia de Educación General</div>
-            <div id = "M1P3" class="tableCell">M1P3</div>
-            <div id = "M2P3" class="tableCell">M2P3</div>
-            <div id = "B1" class="tableCell">B1</div>
-            <div id = "B2" class="tableCell">B2</div>
-            <div id = "B3" class="tableCell">B3</div>
+            <div id = "M1P3" class="tableCell"><strong>Q1029</strong>: Análisis de la estructura y transfromación de la materia</div>
+            <div id = "M2P3" class="tableCell"><strong>MA1028</strong>: Modelación matemática fundamental</div>
+            <div id = "B1" class="tableCell block-cell"><strong>F1001B</strong>: Modelación de la ingeniería y ciencias</div>
+            <div id = "B2" class="tableCell block-cell"><strong>F1006B</strong>: Modelación del movimiento en ingeniería</div>
+            <div id = "B3" class="tableCell block-cell"><strong>F1007B</strong>: Aplicación de las leyes de conservación en sistemas ingenieriles</div>
             <div id = "ST1" class="active tableCell"><div class="stec">Semana Tec 6 </div></div>
             <div id = "ST2" class="active tableCell"><div class="stec">Semana Tec 12</div></div>
             <div id = "ST3" class="active tableCell"><div class="stec">Semana 18 - 1</div></div>
@@ -79,7 +82,7 @@
     <!-- end of Main (Horario)-->
     <!--Footer-->
     <div class="footer">
-        <p>¿Estás listo para inscribirte? Inicia sesión en <a href="https://mitec.itesm.mx" class="link">MiTec</a> e ingresa a <em>Me Inscribo</em></p>
+        <p>¿Estás listo para inscribirte? Inicia sesión en <a href="https://mitec.itesm.mx" class="link yellow" target="_blank">MiTec</a> e ingresa a <em>Me Inscribo</em></p>
         <p>Tecnológico de Monterrey</p>
         <em>Inscripciones Agosto-Diciembre 2021</em>
     </div>
