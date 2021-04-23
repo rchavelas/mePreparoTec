@@ -4,7 +4,6 @@ var sidebarList = document.getElementById("sidebarList");
 var sidebarListOblig = document.getElementById("sidebarListOblig");
 var sidebarListLife = document.getElementById("sidebarListLife");
 
-
 var credsSeleccionados = 0;
 
 /** WA */
@@ -60,7 +59,7 @@ WA1057P3.addEventListener("click",function(){
 function agregarWA1057(params) {
     let liWA1057 = document.createElement("li")
     liWA1057.id = "liWA1057"
-    liWA1057.innerHTML = "0 UdC | WA1057: Mi plan de Vida en el Tec"
+    liWA1057.innerHTML = "<span class='tooltip' data-text='Esta unidad de formación y las Semanas Tec son obligatorias, no se pueden quitar de tu planeación'>0 UdC | WA1057: Mi plan de Vida en el Tec</span>"
     sidebarListOblig.appendChild(liWA1057);
 }
 function quitarWA1057(params) {
@@ -73,6 +72,8 @@ agregarWA1057();
 let EG1P1 = document.getElementById("EG1P1")
 let EG1P2 = document.getElementById("EG1P2")
 let EG1P3 = document.getElementById("EG1P3")
+
+const html_EG = "<span class='tooltip' data-text='En esta UF podrás seleccionar varias opciones de 5 áreas distintas.'>3 UdC | Materia de Educación General</span>"
 
 EG1P1.addEventListener("click",function(){
     if(EG1P1.classList.contains("active")){
@@ -88,7 +89,7 @@ EG1P1.addEventListener("click",function(){
         EG1P3.classList.add("active");
         credsSeleccionados+=3;
         actualizarDom();
-        addToList("EG1","3 UdC | Materia de Educación General")     
+        addToList("EG1",html_EG)     
     };
 });
 
@@ -106,7 +107,7 @@ EG1P2.addEventListener("click",function(){
         EG1P3.classList.add("active");
         credsSeleccionados+=3;
         actualizarDom();
-        addToList("EG1","3 UdC | Materia de Educación General")     
+        addToList("EG1",html_EG)     
     };
 })
 
@@ -124,14 +125,13 @@ EG1P3.addEventListener("click",function(){
         EG1P3.classList.add("active");
         credsSeleccionados+=3;
         actualizarDom();
-        addToList("EG1","3 UdC | Materia de Educación General")     
+        addToList("EG1",html_EG)     
     };
 })
 
 /** ST */
 let ST1 = document.getElementById("ST1")
 ST1.addEventListener("click",function(){
-    console.log("click");
     ST1.classList.toggle("active");
     // quitarST1();
     if(!ST1.classList.contains("active")){
@@ -143,7 +143,6 @@ ST1.addEventListener("click",function(){
 
 let ST2 = document.getElementById("ST2")
 ST2.addEventListener("click",function(){
-    console.log("click")
     ST2.classList.toggle("active");
     // quitarST2();
     if(!ST2.classList.contains("active")){
@@ -155,7 +154,6 @@ ST2.addEventListener("click",function(){
 
 let ST3 = document.getElementById("ST3")
 ST3.addEventListener("click",function(){
-    console.log("click")
     ST3.classList.toggle("active");
     // quitarST3();
     if(!ST3.classList.contains("active")){
