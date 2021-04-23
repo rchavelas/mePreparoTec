@@ -367,22 +367,35 @@ h4 {
   
   /* vertically center */
   top:0%;
-  transform:translateY(-110%);
+  transform:translateY(-105%);
   
   /* move to right */
-  left:10%;
-  margin-right:15px; /* and add a small left margin */
+/*  left:10%;
+/*  margin-right:15px; /* and add a small left margin */
   
   /* basic styles */
-  width: 30ch;
+  width: 100%;
   padding:10px;
   border-radius:10px;
-  background:rgba(0, 0, 0, 0.842);
+  background:rgba(0, 0, 0, 0.856);
   color: #fff;
   text-align:center;
-  font-size:0.75em;
+  font-size:1em;
 
   display:none; /* hide by default */
+}
+
+.tooltipBig::before{
+    /* vertically center */
+    top:0%;
+    transform:translateY(-105%);
+    
+    /* move to right */
+   left:10%;
+   margin-right:15px; /* and add a small left margin */
+
+   width: 30ch;
+   font-size:0.75em;
 }
 
 .tooltip:hover:before {

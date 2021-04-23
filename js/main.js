@@ -73,7 +73,7 @@ let EG1P1 = document.getElementById("EG1P1")
 let EG1P2 = document.getElementById("EG1P2")
 let EG1P3 = document.getElementById("EG1P3")
 
-const html_EG = "<span class='tooltip' data-text='En esta UF podrás seleccionar varias opciones de 5 áreas distintas.'>3 UdC | Materia de Educación General</span>"
+const html_EG = "<span class='tooltip' data-text='En esta UF podrás seleccionar varias opciones de 5 áreas distintas y tiene una duración de 15 semanas.'>3 UdC | Materia de Educación General</span>"
 
 EG1P1.addEventListener("click",function(){
     if(EG1P1.classList.contains("active")){
@@ -259,6 +259,7 @@ B3.addEventListener("click",function(){
 
 /** Materias */
 // Materia 1 periodo 1 (y 2, se quita el id M1P2 de la lista de selección)
+const html_M1P2_2periodos = "<span class='tooltip' data-text='Esta UF abarca 10 semanas, se puede ofrecer en el periodo 1 o en el periodo 2, consulta tu horario para tener más detalles.'>2 UdC | TC1028: Pensamiento computacional para ingeniería</span>"
 let M1P1 = document.getElementById("M1P1")
 M1P1.addEventListener("click",function(){
     if(M1P1.classList.contains("active")){
@@ -272,7 +273,7 @@ M1P1.addEventListener("click",function(){
         M1P2.classList.add("active","tenWk");
         credsSeleccionados+=2;
         actualizarDom();
-        addToList("M1P1","2 UdC | TC1028: Pensamiento computacional para ingeniería")     
+        addToList("M1P1",html_M1P2_2periodos)     
     }
 });
 
@@ -289,7 +290,7 @@ M1P2.addEventListener("click",function(){
         M1P1.classList.add("active","tenWk");
         credsSeleccionados+=2;
         actualizarDom();
-        addToList("M1P1","2 UdC | TC1028: Pensamiento computacional para ingeniería")     
+        addToList("M1P1",html_M1P2_2periodos)     
     }
 });
 
