@@ -18,6 +18,10 @@ body {
     "ft ft ft ft ft ft ft ft ft ft"
 }
 
+.containerMain{
+  background-color: white;
+}
+
 @media(max-width:1000px) {
   .container{
     display: grid;
@@ -25,6 +29,53 @@ body {
       grid-template-areas: "nv" "mn" "sd" "ft";
       background-color: white;
   }
+}
+
+.menuSeleccionOpciones{
+  padding: 0;
+  list-style-type: none;
+  padding-top:30px;
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
+
+@media(max-width:1000px) {
+  .menuSeleccionOpciones{
+    width: 70%;
+  }
+}
+
+@media(max-width:767px) {
+  .menuSeleccionOpciones{
+    width: 90%;
+  }
+}
+
+.menuSeleccionOpciones a{
+  display: block;
+  background-color: #0054a6;
+  text-decoration: none;
+  padding: 15px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  color: white;
+  border-radius: 5px;
+  transition: all 500ms;
+}
+
+.menuSeleccionOpciones a:hover{
+  background-color: #f8f7f9;
+  color: #0054a6;
+outline: 1px solid  #0054a6; 
+}
+
+.menuSeleccionOpciones a:active{
+  background-color: #eeeeee;
+  color: #0054a6;
+  outline: 1px solid  #0054a6; 
 }
 
 .nav{
