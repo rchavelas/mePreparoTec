@@ -12,7 +12,6 @@ let WA1057P2 = document.getElementById("WA1057P2")
 let WA1057P3 = document.getElementById("WA1057P3")
 
 WA1057P1.addEventListener("click",function(){
-    console.log("click")
     WA1057P1.classList.toggle("active")
     WA1057P2.classList.toggle("active")
     WA1057P3.classList.toggle("active")
@@ -27,7 +26,6 @@ WA1057P1.addEventListener("click",function(){
 })
 
 WA1057P2.addEventListener("click",function(){
-    console.log("click")
     this.classList.toggle("active")
     WA1057P1.classList.toggle("active")
     WA1057P3.classList.toggle("active");
@@ -42,7 +40,6 @@ WA1057P2.addEventListener("click",function(){
 })
 
 WA1057P3.addEventListener("click",function(){
-    console.log("click")
     WA1057P3.classList.toggle("active");
     WA1057P2.classList.toggle("active");
     WA1057P1.classList.toggle("active");
