@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">     
+    <link rel="stylesheet" href="css/styles.css">
+    <title> &#x1F4AD miPrimerSemestreTec | ICT</title>
+    
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!--Contenedor principal-->
+    <div class="container">
+        <!--Barra de navegación superior-->
+        <div class="nav">
+            <h3><a href="/" class="navLink">mi Primer Semestre Tec</a></h3>
+            <p class="carrera"><a href="https://tec.mx/es/computacion-y-tecnologias-de-informacion" class ="navLink" target="_blank">
+                &#x1F4BB <span class="carreraCompleta">Ingeniería / Computación y Tecnologías de Información | </span> ICT </a></p>
+            </div>
+            <!--Barra lateral (UF's)-->
+            <div id="sidebar">
+                <div id="sidebarListcontainer">
+                    <h3 id="seleccionTitle">
+                        <span class="tooltip tooltipBig" data-text="Selecciona las Unidades de Formación de tu interés para iniciar tu planeación">mi Planeación</span>
+                    </h3>
+                    <h4>Obligatorias</h4>
+                    <ul id="sidebarListOblig" class="sidebarList">
+                    </ul>
+                    <h4>Disciplinares</h4>
+                    <ul id="sidebarList" class="sidebarList">
+                    </ul>
+                    <h4>LiFE</h4>
+                    <ul id="sidebarListLife" class="sidebarList">
+                    </ul>
+                </div>
+                <span id="creditosTotales"></span>
+            </div>
+            <!--Main (Horario)-->
+            <div class="main">
+                <div class="horario">
+                    <!--Títulos-->
+                    <div id="mainUF"><h2>Unidades de Formación Disciplinares</h2></div>
+                    <div id = "P1_Titulo" class="tableTitle"><strong>Periodo 1 <br>(Semanas 1 a 5)</strong></div>
+                    <div id = "ST1_Titulo" class="tableTitle"><strong>Semana<br>Tec</strong></div>
+                    <div id = "P2_Titulo" class="tableTitle"><strong>Periodo 2 <br>(Semanas 6 a 11)</strong></div>
+                    <div id = "ST2_Titulo" class="tableTitle"><strong>Semana<br>Tec</strong></div>
+                    <div id = "P3_Titulo" class="tableTitle"><strong>Periodo 3 <br>(Semanas 13 a 17)</strong></div>
+                    <div id = "ST3_Titulo" class="tableTitle"><strong>Semana<br>Tec</strong></div>
+                    <div id = "WA1057P1" class="active tableCell"><strong>WA1057</strong>: Mi plan de vida en el tec</div>
+                    <div id = "WA1057P2" class="active tableCell"><strong>WA1057</strong>: Mi plan de vida en el tec</div>
+                    <div id = "WA1057P3" class="active tableCell"><strong>WA1057</strong>: Mi plan de vida en el tec</div>
+                    <div id = "EG1P1" class="EG tableCell">Materia de Educación General</div>
+                    <div id = "M1P1" class="tableCell"><strong>TC1028</strong>: Pensamiento computacional para ingeniería</div>
+                    <div id = "M2P1"class="tableCell"><strong>Q1028</strong>: Fundamentación de la estructura y transfromación de la materia</div>
+                    <div id = "EG1P2" class="EG tableCell">Materia de Educación General</div>
+                    <div id = "M1P2" class="tableCell"><strong>TC1028</strong> Pensamiento computacional para ingeniería</div>
+                    <div id = "M2P2" class="tableCell"><strong>MA1028</strong>: Modelación matemática fundamental</div>
+                    <div id = "EG1P3" class="EG tableCell">Materia de Educación General</div>
+                    <div id = "M1P3" class="tableCell"><strong>TC1033</strong>: Pensamiento computacoinal orientado a objetos</div>
+                    <div id = "M2P3" class="tableCell"><strong>MA1028</strong>: Modelación matemática fundamental</div>
+                    <div id = "B1" class="tableCell block-cell"><strong>F1001B</strong>: Modelación de la ingeniería y ciencias</div>
+                    <div id = "B2" class="tableCell block-cell"><strong>F1004B</strong>: Modelación computacional del movimiento</div>
+                    <div id = "B3" class="tableCell block-cell"><strong>F1005B</strong>: Modelación computacional aplicando leyes de conservación</div>
+                    <div id = "ST1" class="active tableCell stecCell"><div class="stec">Semana Tec 6 </div></div>
+                    <div id = "ST2" class="active tableCell stecCell"><div class="stec">Semana Tec 12</div></div>
+                    <div id = "ST3" class="active tableCell stecCell"><div class="stec">Semana 18 - 1</div></div>
+                    <div id="otherUF">
+                        <h2><span class="tooltip tooltipBig" data-text="¡No olvides consultar las opciones de actividades deportivas, culturales y artísticas que LIFE tiene para ti!">Unidades de Formación LIFE</span></h2>
+                        <p class="form-group">
+                            <input type="text" placeholder="Registra en tu planeación la UF LIFE de tu interés (Ej. Batería)" class="formInput" id="inputLife1" name="input_1"/>
+                        </p>
+                        <p class="form-group">
+                            <input type="text" placeholder="Registra en tu planeación la UF LIFE de tu interés (Ej. Bodycombat)" class="formInput" id="inputLife2"/>
+                        </p>                   
+                        <p class="form-group">
+                            <input type="text" placeholder="Registra en tu planeación la UF LIFE de tu interés (Ej. Yoga)" class="formInput" id="inputLife3"/>
+                        </p>                
+                    </div>
+                </div>
+            </div>
+            <!-- end of Main (Horario)-->
+            <!--Footer-->
+            <div class="footer">
+                <p>¿Estás list@ para inscribirte? Inicia sesión en <a href="https://mitec.itesm.mx" class="link yellow" target="_blank">MiTec</a> e ingresa al apartado <em>Me Inscribo</em></p>
+                <p>Tecnológico de Monterrey</p>
+                <em>Inscripciones Agosto-Diciembre 2021</em>
+            </div>
+        </div>
+        <!--end of Contenedor principal-->
+        <div id="mensaje"></div>
+        
+    </body>
+    <script type = "text/javascript" src = "js/ict.js"></script>
+    </html>

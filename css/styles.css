@@ -31,11 +31,9 @@ body {
   }
 }
 
-.menuSeleccionOpciones{
-  padding: 0;
-  list-style-type: none;
+#menuSeleccion{
   padding-top:30px;
-  width: 40%;
+  width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -43,15 +41,32 @@ body {
 }
 
 @media(max-width:1000px) {
-  .menuSeleccionOpciones{
+  #menuSeleccion{
     width: 70%;
   }
 }
 
 @media(max-width:767px) {
-  .menuSeleccionOpciones{
+  #menuSeleccion{
     width: 90%;
   }
+}
+
+.expliMiPlaneacion{
+margin-bottom: 15px;
+border-radius: 5px;
+background-color: #f8f7f9;
+padding: 15px;
+text-align: justify;
+}
+
+.expliMiPlaneacion p{
+  margin: 10px;
+}
+
+.menuSeleccionOpciones{  
+  list-style-type: none;
+  padding: 0;
 }
 
 .menuSeleccionOpciones a{

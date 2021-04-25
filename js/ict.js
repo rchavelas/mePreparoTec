@@ -239,7 +239,7 @@ B2.addEventListener("click",function(){
         B2.classList.add("active");
         credsSeleccionados+=3;
         actualizarDom();
-        addToList("B2","3 UdC | F1006B: Modelación del movimiento en ingeniería")     
+        addToList("B2","3 UdC | F1004B: Modelación computacional del movimiento")     
     };
 });
 
@@ -254,7 +254,7 @@ B3.addEventListener("click",function(){
         B3.classList.add("active");
         credsSeleccionados+=3;
         actualizarDom();
-        addToList("B3","3 UdC | F1007B: Aplicación de las leyes de conservación en sistemas ingenieriles");     
+        addToList("B3","3 UdC | F1005B: Modelación computacional aplicando leyes de conservación");     
     }
 })
 
@@ -306,7 +306,7 @@ M1P3.addEventListener("click",function(){
         M1P3.classList.add("active");
         credsSeleccionados+=1;
         actualizarDom();
-        addToList("M1P3","1 UdC | Q1029: Análisis de la estructura y transformación de la materia")     
+        addToList("M1P3","1 UdC | TC1033: Pensamiento computacional orientado a objetos")     
 
     }
 });
