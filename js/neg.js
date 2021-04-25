@@ -209,7 +209,7 @@ function removeFromList(ufToList) {
 }
 
 /** B */
-const B1HTML =  "<span class='tooltip' data-text='Esta UF es un Bloque (de ahí que la clave termine en B). Es una UF que tiene múltiples módulos distintos y un reto para realizarse en 5 semanas.'>3 UdC | AD1008: El rol de los negocios en la sociedad</span>" 
+const B1HTML =  "<span class='tooltip' data-text='Esta UF es un Bloque (de ahí que la clave termine en B). Es una UF que tiene múltiples módulos distintos y un reto para realizarse en 5 semanas.'>3 UdC | AD1001B: El rol de los negocios en la sociedad</span>" 
 let B1 = document.getElementById("B1")
 B1.addEventListener("click",function(){
     if(B1.classList.contains("active")){
