@@ -410,6 +410,10 @@ box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
   background-color:#c3ddf5;
 }
 
+.alertBlock.active {
+  background-color: #c7bef8;
+}
+
 h4 {
   color: #002d5a;
   margin: 5px;
