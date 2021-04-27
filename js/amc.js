@@ -209,7 +209,7 @@ function removeFromList(ufToList) {
 }
 
 /** B */
-const B1HTML =  "<span class='tooltip' data-text='Esta UF es un Bloque (de ahí que la clave termine en B). Es una UF que tiene múltiples módulos distintos y un reto para realizarse en 5 semanas.'>3 UdC | AD1000B: El rol de los negocios en la sociedad</span>" 
+const B1HTML =  "<span class='tooltip' data-text='Esta UF es un Bloque (de ahí que la clave termine en B). Es una UF que tiene múltiples módulos distintos y un reto para realizarse en 5 semanas.'>3 UdC | AR1002B: Exploración en el hábitat: de la escala del elemento al territorio</span>" 
 let B1 = document.getElementById("B1")
 B1.addEventListener("click",function(){
     if(B1.classList.contains("active")){
@@ -225,81 +225,93 @@ B1.addEventListener("click",function(){
     };
 })
 
-const B2HTML =  "<span class='tooltip' data-text='Los bloques de exploración te permiten cursar UF de 1er o 2o semestre y se ofrecen en los periodos 2 y 3 del semestre. Consulta a tu asesor académico para conocer las distintas opciones.'>3 UdC | Carrousel 1: Bloque de exploración de área</span>" 
 let B2 = document.getElementById("B2");
 B2.addEventListener("click",function(){
-    if(B2.classList.contains("active","alertBlock")){
+    if(B2.classList.contains("active")){
         B2.classList.remove("active");
         credsSeleccionados-=3;
         actualizarDom();
         removeFromList("B2")
     } else {
-        B2.classList.add("active","alertBlock");
+        B2.classList.add("active");
         credsSeleccionados+=3;
         actualizarDom();
-        addToList("B2",B2HTML)     
+        addToList("B2","3 UdC | AR1007B: Modelación de la física en el ambiente construido: Estática")     
     };
 });
 
 let B3 = document.getElementById("B3")
 B3.addEventListener("click",function(){
     if(B3.classList.contains("active")){
-        B3.classList.remove("active","alertBlock");
+        B3.classList.remove("active");
         credsSeleccionados-=3;
         actualizarDom();
         removeFromList("B3")
     } else {
-        B3.classList.add("active","alertBlock");
+        B3.classList.add("active");
         credsSeleccionados+=3;
         actualizarDom();
-        addToList("B3","3 UdC | Carrousel 2: Bloque de exploración de área");     
+        addToList("B3","3 UdC | AR1008B: Modelación de la física en el ambiente construido: Dinámica");     
     }
 })
 
 /** Materias */
 // Materia 1 periodo 1 (y 2, se quita el id M1P2 de la lista de selección)
+const html_M1P1_3periodos = "<span class='tooltip' data-text='Esta UF abarca 15 semanas. Procura seleccionarla primero al hacer tu horario'>3 UdC | MA1047: Razonamiento matemático en el ambiente construido</span>"
 let M1P1 = document.getElementById("M1P1")
 M1P1.addEventListener("click",function(){
     if(M1P1.classList.contains("active")){
-        M1P1.classList.remove("active");
-        credsSeleccionados-=1;
+        M1P1.classList.remove("active","alertBlock");
+        M1P2.classList.remove("active","alertBlock");
+        M1P3.classList.remove("active","alertBlock");
+        credsSeleccionados-=3;
         actualizarDom();
         removeFromList("M1P1")
     } else {
-        M1P1.classList.add("active");
-        credsSeleccionados+=1;
+        M1P1.classList.add("active","alertBlock");
+        M1P2.classList.add("active","alertBlock");
+        M1P3.classList.add("active","alertBlock");
+        credsSeleccionados+=3;
         actualizarDom();
-        addToList("M1P1","1 UdC | CF1015: Análisis financiero")     
+        addToList("M1P1",html_M1P1_3periodos)     
     }
 });
 
 let M1P2 = document.getElementById("M1P2")
 M1P2.addEventListener("click",function(){
     if(M1P2.classList.contains("active")){
-        M1P2.classList.remove("active");
-        credsSeleccionados-=1;
+        M1P1.classList.remove("active","alertBlock");
+        M1P2.classList.remove("active","alertBlock");
+        M1P3.classList.remove("active","alertBlock");
+        credsSeleccionados-=3;
         actualizarDom();
-        removeFromList("M1P2")
+        removeFromList("M1P1")
     } else {
-        M1P2.classList.add("active");
-        credsSeleccionados+=1;
+        M1P1.classList.add("active","alertBlock");
+        M1P2.classList.add("active","alertBlock");
+        M1P3.classList.add("active","alertBlock");
+        credsSeleccionados+=3;
         actualizarDom();
-        addToList("M1P2","1 UdC | FZ1011: Decisiones financieras")     
+        addToList("M1P1",html_M1P1_3periodos)     
     }
 });
 
 let M1P3 = document.getElementById("M1P3")
 M1P3.addEventListener("click",function(){
     if(M1P3.classList.contains("active")){
-        M1P3.classList.remove("active");
-        credsSeleccionados-=1;
+        M1P1.classList.remove("active","alertBlock");
+        M1P2.classList.remove("active","alertBlock");
+        M1P3.classList.remove("active", "alertBlock");
+        credsSeleccionados-=3;
         actualizarDom();
-        removeFromList("M1P3")
+        removeFromList("M1P1")
     } else {
-        M1P3.classList.add("active");
-        credsSeleccionados+=1;
+        M1P1.classList.add("active","alertBlock");
+        M1P2.classList.add("active","alertBlock");
+        M1P3.classList.add("active","alertBlock");
+        credsSeleccionados+=3;
         actualizarDom();
-        addToList("M1P3","1 UdC | MA1027: Razonamiento matemático")     
+        addToList("M1P1",html_M1P1_3periodos)     
 
     }
 });
@@ -315,7 +327,7 @@ M2P1.addEventListener("click",function(){
         M2P1.classList.add("active");
         credsSeleccionados+=1;
         actualizarDom();
-        addToList("M2P1","1 UdC | EC1017: Economía empresarial")     
+        addToList("M2P1","1 UdC | TC1036: Resolución de problemas en el ambiente construido con lógica computacional")     
     }
 });
 
@@ -323,30 +335,34 @@ M2P1.addEventListener("click",function(){
 let M2P2 = document.getElementById("M2P2")
 M2P2.addEventListener("click",function(){
     if(M2P2.classList.contains("active")){
-        M2P2.classList.remove("active");
-        credsSeleccionados-=1;
+        M2P2.classList.remove("active","tenWk");
+        M2P3.classList.remove("active","tenWk");
+        credsSeleccionados-=2;
         actualizarDom();
         removeFromList("M2P2")
     } else {
-        M2P2.classList.add("active");
-        credsSeleccionados+=1;
+        M2P2.classList.add("active","tenWk");
+        M2P3.classList.add("active","tenWk");
+        credsSeleccionados+=2;
         actualizarDom();
-        addToList("M2P2","1 UdC | TC1027: Programación para negocios")     
+        addToList("M2P2","2 UdC | CV1009: Análisis químico del amb. y de los manteriales de construcción")     
     }
 });
 
 let M2P3 = document.getElementById("M2P3")
 M2P3.addEventListener("click",function(){
     if(M2P3.classList.contains("active")){
-        M2P3.classList.remove("active");
-        credsSeleccionados-=1;
+        M2P3.classList.remove("active","tenWk");
+        M2P2.classList.remove("active","tenWk");
+        credsSeleccionados-=2;
         actualizarDom();
-        removeFromList("M2P3")
+        removeFromList("M2P2")
     } else {
-        M2P3.classList.add("active");
-        credsSeleccionados+=1;
+        M2P3.classList.add("active","tenWk");
+        M2P2.classList.add("active","tenWk");
+        credsSeleccionados+=2;
         actualizarDom();
-        addToList("M2P3","1 UdC | AD1014: Dirección de los negocios")     
+        addToList("M2P2","2 UdC | CV1009: Análisis químico del amb. y de los manteriales de construcción")     
     }
 });
 

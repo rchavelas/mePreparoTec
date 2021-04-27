@@ -87,6 +87,12 @@ text-align: justify;
 outline: 1px solid  #0054a6; 
 }
 
+.inactiveLink{
+  background-color: #c4c4c4 !important;
+  color: white !important;
+  outline: 1px solid  #c4c4c4 !important; 
+}
+
 .menuSeleccionOpciones a:active{
   background-color: #eeeeee;
   color: #0054a6;
@@ -156,7 +162,7 @@ box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
     "WA1057P1 ST1 WA1057P2 ST2 WA1057P3 ST3"
     "EG1P1 ST1 EG1P2 ST2 EG1P3 ST3" 
     "M1P1 ST1 M1P2 ST2 M1P3 ST3" 
-    "M2P1 ST1 M2P2 ST2 M2P3 ST3"
+    "M2P2 ST1 M2P3 ST2 M2P1 ST3"
     "B1 ST1 B2 ST2 B3 ST3" 
     "otherUF otherUF otherUF otherUF otherUF otherUF" ;
   }
@@ -169,9 +175,9 @@ box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
         grid-template-columns: unset;
         grid-template-rows: unset;
         grid-template-areas:
-        "mainUF mainUF" "P1 ST1t" "WA1057P1 ST1" "EG1P1 ST1" "M1P1 ST1" "M2P1 ST1"  "B1 ST1" 
-        "P2 ST2t" "WA1057P2 ST2" "EG1P2 ST2" "M1P2 ST2" "M2P2 ST2" "B2 ST2" 
-        "P3 ST3t" "WA1057P3 ST3" "EG1P3 ST3" "M1P3 ST3" "M2P3 ST3""B3 ST3" "otherUF otherUF";
+        "mainUF mainUF" "P1 ST1t" "WA1057P1 ST1" "EG1P1 ST1" "M1P1 ST1" "M2P2 ST1"  "B1 ST1" 
+        "P2 ST2t" "WA1057P2 ST2" "EG1P2 ST2" "M1P2 ST2" "M2P3 ST2" "B2 ST2" 
+        "P3 ST3t" "WA1057P3 ST3" "EG1P3 ST3" "M1P3 ST3" "M2P1 ST3""B3 ST3" "otherUF otherUF";
       }
       
   }
