@@ -316,18 +316,18 @@ M1P3.addEventListener("click",function(){
     }
 });
 
-let M2P1 = document.getElementById("M2P1")
-M2P1.addEventListener("click",function(){
-    if(M2P1.classList.contains("active")){
-        M2P1.classList.remove("active");
+let M2P3 = document.getElementById("M2P3")
+M2P3.addEventListener("click",function(){
+    if(M2P3.classList.contains("active")){
+        M2P3.classList.remove("active");
         credsSeleccionados-=1;
         actualizarDom();
-        removeFromList("M2P1")
+        removeFromList("M2P3")
     } else {
-        M2P1.classList.add("active");
+        M2P3.classList.add("active");
         credsSeleccionados+=1;
         actualizarDom();
-        addToList("M2P1","1 UdC | TC1036: Resolución de problemas en el ambiente construido con lógica computacional")     
+        addToList("M2P3","1 UdC | TC1036: Resolución de problemas en el ambiente construido con lógica computacional")     
     }
 });
 
@@ -336,29 +336,29 @@ let M2P2 = document.getElementById("M2P2")
 M2P2.addEventListener("click",function(){
     if(M2P2.classList.contains("active")){
         M2P2.classList.remove("active","tenWk");
-        M2P3.classList.remove("active","tenWk");
+        M2P1.classList.remove("active","tenWk");
         credsSeleccionados-=2;
         actualizarDom();
         removeFromList("M2P2")
     } else {
         M2P2.classList.add("active","tenWk");
-        M2P3.classList.add("active","tenWk");
+        M2P1.classList.add("active","tenWk");
         credsSeleccionados+=2;
         actualizarDom();
         addToList("M2P2","2 UdC | CV1009: Análisis químico del amb. y de los manteriales de construcción")     
     }
 });
 
-let M2P3 = document.getElementById("M2P3")
-M2P3.addEventListener("click",function(){
-    if(M2P3.classList.contains("active")){
-        M2P3.classList.remove("active","tenWk");
+let M2P1 = document.getElementById("M2P1")
+M2P1.addEventListener("click",function(){
+    if(M2P1.classList.contains("active")){
+        M2P1.classList.remove("active","tenWk");
         M2P2.classList.remove("active","tenWk");
         credsSeleccionados-=2;
         actualizarDom();
         removeFromList("M2P2")
     } else {
-        M2P3.classList.add("active","tenWk");
+        M2P1.classList.add("active","tenWk");
         M2P2.classList.add("active","tenWk");
         credsSeleccionados+=2;
         actualizarDom();
