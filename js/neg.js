@@ -187,7 +187,7 @@ agregarST2();
 function agregarST3(params) {
     let liST3 = document.createElement("li")
     liST3.id = "liST3"
-    liST3.innerHTML = "0 UdC | Semana Tec 18 - 1 (Semana 18)"
+    liST3.innerHTML = "0 UdC | WKNE1001S: Semana 18 - 1 Negocios"
     sidebarListOblig.appendChild(liST3);
 }
 function quitarST3(params) {
@@ -225,7 +225,7 @@ B1.addEventListener("click",function(){
     };
 })
 
-const B2HTML =  "<span class='tooltip' data-text='Los bloques de exploración te permiten cursar UF de 1er o 2o semestre y se ofrecen en los periodos 2 y 3 del semestre. Consulta a tu asesor académico para conocer las distintas opciones.'>3 UdC | Carrousel 1: Bloque de exploración de área</span>" 
+const B2HTML =  "<span class='tooltip' data-text='Los bloques de exploración te permiten cursar UF de 1er o 2o semestre y se ofrecen en los periodos 2 y 3 del semestre.'>3 UdC | Carrousel 1: Bloque de exploración de área</span>" 
 let B2 = document.getElementById("B2");
 B2.addEventListener("click",function(){
     if(B2.classList.contains("active","alertBlock")){

@@ -187,7 +187,7 @@ agregarST2();
 function agregarST3(params) {
     let liST3 = document.createElement("li")
     liST3.id = "liST3"
-    liST3.innerHTML = "0 UdC | Semana Tec 18 - 1 (Semana 18)"
+    liST3.innerHTML = "0 UdC | Semana Tec 18 - 1 Ambiente Construido"
     sidebarListOblig.appendChild(liST3);
 }
 function quitarST3(params) {
